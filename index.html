@@ -3,315 +3,221 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <link
-      rel="stylesheet"
-      href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="style.css" />
+    <title>Elvis Portfolio</title>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <img src="images/logo-image.jpeg" width="100" height="80" />
-        <button
-          class="navbar-toggler shadow-none border-0"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="sidebar offcanvas offcanvas-start"
-          tabindex="-1"
-          id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel"
-        >
-          <div class="offcanvas-header text-white border-bottom">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Vape Shop</h5>
-            <button
-              type="button"
-              class="btn-close btn-close-white shadow-none"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul
-              class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3"
-            >
-              <li class="nav-item mx-2">
-                <a class="nav-link active" aria-current="page" href="index.html"
-                  ><strong>Home</strong></a
-                >
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="products.html"
-                  ><strong>Products</strong></a
-                >
-              </li>
-              <li class="nav-item mx2">
-                <a class="nav-link" href="contact.html"
-                  ><strong>Contact</strong></a
-                >
-              </li>
-            </ul>
-            <div class="d-flex justify-content-center align-items-center gap-3">
-              <a
-                href="login.html"
-                class="text-white text-decoration-none px-3 py-2 rounded-5"
-                style="background-color: black"
-                >Log in</a
-              >
-              <a
-                href="signup.html"
-                class="text-white text-decoration-none px-3 py-2 rounded-5"
-                style="background-color: black"
-                >Sign Up</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
+    <nav>
+      <span class="logo"><i class='bx bx-buildings'></i> My Portfolio</span>
+      <ul>
+        <li><a href="#home"><i class='bx bx-home'></i> Home</a></li>
+        <li><a href="#about"><i class='bx bx-user'></i> About</a></li>
+        <li><a href="#myskills"><i class='bx bx-award'></i> My Skills</a></li>
+        <li><a href="#projects"><i class='bx bx-folder'></i> Projects</a></li>
+        <li><a href="#contact"><i class='bx bx-envelope'></i> Contact</a></li>
+      </ul>      
     </nav>
+    
 
-    <div id="intro" class="bg-image shadow-2-strong">
-      <div class="mask" style="background-color: rgba(0, 0, 0, 0.8)">
-        <div
-          class="container d-flex align-items-center justify-content-center text-center h-100"
-        >
-          <div class="text-white" data-mdb-theme="dark">
-            <h1 class="mb-6"></h1>
-          </div>
+    <div id="home" class="content-section">
+      <div class="content-wrapper">
+        <div class="text-content">
+          <h2>
+            <span class="hello-text">HELLO!</span>
+            <span class="im-text">I'M</span>
+            <span class="elvis-text">ELVIS</span>
+          </h2>
+          <h2>
+            <span class="website-text">Front-End</span>
+            <span class="developer-text">Developer</span>
+          </h2>
+          <p>
+            Coding your vision to reality. 
+          </p>
+          <p>
+            Code your dreams. 
+          </p>
+          <p>
+            Coding your success
+            story.
+          </p>
+
+          <a href="#projects" class="cta-button"><i class='bx bx-folder-open'></i> View Projects</a>
+          
+        </div>
+        <div class="image-content">
+          <img src="images/home-image.jpg" alt="Image Description" />
         </div>
       </div>
     </div>
 
-    <section id="home" class="home">
-      <div class="home-content">
-        <h1>ELVIS</h1>
-        <div class="home-content">
-          <h2>Vape Shop</h2>
-          <p></p>
+    <section id="about" class="aboutme-section">
+      <div>
+        <div class="profile-pic">
+          <img src="images/about-image.JPG" alt="Profile Picture" width="200" />
         </div>
-      </div>
-      <div class="me-content">
-        <img src="images/home-image.jpg" alt="Avatar" width="500" />
-      </div>
-    </section>
-
-    <section class="text-center">
-      <h4 class="mb-5"><strong>Blog Post</strong></h4>
-      <div class="row">
-        <div class="col-lg-4 col-md-12 mb-4">
-          <div class="card">
-            <div
-              class="bg-image hover-overlay"
-              data-mdb-ripple-init
-              data-mdb-ripple-color="light"
-            >
-              <img src="images/home2-image.jpg" class="img-fluid" />
-              <a href="#!">
-                <div
-                  class="mask"
-                  style="background-color: rgba(251, 251, 251, 0.15)"
-                ></div>
-              </a>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">
-                Pod Systems: A Glimpse into Versatility
-              </h5>
-              <p class="card-text">
-                Enter the world of pod systems, where brands like the LIX ECO
-                Kit and RELX Infinity redefine the vaping experience. LIX ECO
-                Kit seamlessly combines a rechargeable mod with disposable pods,
-                boasting an impressive 6000 puffs. Its rechargeable nature
-                provides longevity and flexibility, allowing users to customize
-                their experience with replaceable pods. Meanwhile, the RELX
-                Infinity stands out with its sleek design reminiscent of a USB
-                drive. This brand emphasizes discretion and portability,
-                offering users a compact and stylish option for on-the-go
-                vaping. With both LIX ECO Kit and RELX Infinity, the modular
-                design allows for experimentation with various e-liquid flavors
-                and nicotine strengths.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card">
-            <div
-              class="bg-image hover-overlay"
-              data-mdb-ripple-init
-              data-mdb-ripple-color="light"
-            >
-              <img src="images/home3-image.jpg" class="img-fluid" />
-              <a href="#!">
-                <div
-                  class="mask"
-                  style="background-color: rgba(251, 251, 251, 0.15)"
-                ></div>
-              </a>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">
-                How Disposable Vapes Are Taking the Philippines by Storm: The
-                Convenient, Affordable, and Flavorful Alternative to Traditional
-                E-Cigarettes
-              </h5>
-              <p class="card-text">
-                One of the main reasons for the popularity of disposable vapes
-                in the Philippines is their convenience. Unlike traditional
-                e-cigarettes, which require the user to constantly refill the
-                e-liquid and recharge the battery, disposable vapes are ready to
-                use right out of the box. This makes them an ideal choice for
-                people who are always on the go and don't have the time to mess
-                around with complicated devices. Plus, because disposable vapes
-                are designed to be used only once and then discarded, there is
-                no need to worry about cleaning or maintaining the device.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card">
-            <div
-              class="bg-image hover-overlay"
-              data-mdb-ripple-init
-              data-mdb-ripple-color="light"
-            >
-              <img src="images/home4-image.jpg" class="img-fluid" />
-              <a href="#!">
-                <div
-                  class="mask"
-                  style="background-color: rgba(251, 251, 251, 0.15)"
-                ></div>
-              </a>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">
-                LIX ECO: The Best Pod System Vape in the Philippines"
-              </h5>
-              <p class="card-text">
-                A New Era of Sustainable Vaping with LIX ECO Vaping just got a
-                whole lot better with the introduction of LIX ECO, the
-                Philippines' first homegrown vape brand. With a focus on
-                sustainability and waste reduction, the LIX ECO pod system is a
-                solution to the growing waste disposal issue from disposable
-                vapes. And with its cost-effectiveness and 6000 puffs per pod,
-                you can enjoy more vaping for your money without sacrificing
-                quality or flavor. Experience a new era of sustainable vaping
-                with LIX ECO.
-              </p>
-            </div>
-          </div>
+        <div class="info">
+          <h1 class="head-about" ><i class='bx bx-user'></i> About Me</h1>
+          <h2>Hello! I'm Elvis Bogsangit Jr</h2>
+          <p>
+            Hi, I'm Elvis H. Bogsangit Jr., a passionate Front-End Developer based in Pagadian City, Zamboanga Del Sur. I graduated with an Associate Degree in Information Technology and have spent the past few years self-studying web development. During this time, I've continuously practiced coding by creating personal websites and expanding my portfolio. I specialize in website development, focusing on building responsive, user-friendly websites and applications that deliver seamless experiences. I'm always eager to learn new technologies and tackle challenges to improve my craft.
+          </p>
+          <p>
+            Feel free to browse through my portfolio to see some of my recent
+            work. If you'd like to collaborate or have any inquiries, don't
+            hesitate to contact me</a>.
+          </p>
         </div>
       </div>
     </section>
 
-    <hr class="my-5" />
-
-
-    <footer class="text-center text-lg-start bg-body-tertiary text-muted">
-   
-      <section
-        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
-      >
+    <section id="myskills" class="myskills-section">
+      <header class="head-skills"><i class='bx bx-cog'></i> <b>My Skills</b></header>
       
-        <div class="me-5 d-none d-lg-block">
-          <span></span>
-        </div>
-  
-      </section>
-     
-
+      <div class="skill">
+        <img src="images/html-image.png" alt="HTML">
+        <h3>HTML</h3>
+      </div>
     
-      <section class="">
-        <div class="container text-center text-md-start mt-5">
-        
-          <div class="row mt-3">
-          
-            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-          
-              <h6 class="text-uppercase fw-bold mb-4">
-                <i class="fas fa-gem me-0"></i>Elvis Vape Shop
-              </h6>
-              <p>
-                Order Us now
-              </p>
-            </div>
-         
-
-          
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-        
-              <h6 class="text-uppercase fw-bold mb-4">Products</h6>
-              <p>
-                <a>GeekVape</a>
-              </p>
-              <p>
-                <a >Relx</a>
-              </p>
-              <p>
-                <a>Flava</a>
-              </p>
-              <p>
-                <a>Timix</a>
-              </p>
-            </div>
-       
-
-          
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-           
-              <h6 class="text-uppercase fw-bold mb-4">Quick Links</h6>
-              <p>
-                <a href="index.html" class="text-reset">Home</a>
-              </p>
-              <p>
-                <a href="products.html" class="text-reset">Products</a>
-              </p>
-              <p>
-                <a href="contact.html" class="text-reset">Contact</a>
-              </p>
-             
-            </div>
-        
-        
-          </div>
-      
-        </div>
-      </section>
-   
-
-     
-      <div
-        class="text-center p-4"
-        style="background-color: rgba(0, 0, 0, 0.05)"
-      >
-        © 2024 Copyright:
-      
-          Elvis Vape Shop</a
-        >
+      <div class="skill">
+        <img src="images/css-image.png" alt="CSS">
+        <h3>CSS</h3>
       </div>
-   
-    </footer>
+    
+      <div class="skill">
+        <img src="images/java-images.png" alt="JAVASCRIPT">
+        <h3>JAVASCRIPT</h3>
+      </div>
+    
+      <div class="skill">
+        <img src="images/react-image.png" alt="REACT.JS">
+        <h3>REACT.JS</h3>
+      </div>
+    
+      <div class="skill">
+        <img src="images/nextjs-image.png" alt="NEXT.JS">
+        <h3>NEXT.JS</h3>
+      </div>
+    
+      <div class="skill">
+        <img src="images/ts-image.png" alt="TYPESCRIPT">
+        <h3>TYPESCRIPT</h3>
+      </div>
+    
+      <div class="skill">
+        <img src="images/bp-image.png" alt="BOOTSTRAP">
+        <h3>BOOTSTRAP</h3>
+      </div>
+    
+      <div class="skill">
+        <img src="images/tw-image.png" alt="TAILWIND">
+        <h3>TAILWIND</h3>
+      </div>
+    
+      <div class="skill">
+        <img src="images/responsive-image.png" alt="RESPONSIVE WEB DESIGN">
+        <h3>RESPONSIVE WEB DESIGN</h3>
+      </div>
+      
+    </section>
+    
+    
 
+    <header id="projects" class="head-projects"><i class='bx bx-folder-open'></i> <b>My Personal Projects</b></header>
+    <section id="projects" class="projects-section">
+      <div class="project">
+          <img src="images/project1-image.JPG" alt="Project Image">
+          <div class="overlay">
+              <p>HTML, CSS, BOOTSTRAP.</p>
+              <div class="button-container">
+                  <a href="https://junzel15.github.io/Vape-Shop/" class="button">Live Link</a>
+              </div>
+          </div>
+      </div>
+  
+      <div class="project">
+          <img src="images/project2-image.JPG" alt="Project Image">
+          <div class="overlay">
+            <p>HTML, CSS, JAVASCRIPT.</p>
+            <div class="button-container">
+                <a href="https://junzel15.github.io/FLOR-Beauty-Products/" class="button">Live Link</a>
+            </div>
+          </div>
+      </div>
+
+      <div class="project">
+        <img src="images/project3-image.JPG" alt="Project Image">
+        <div class="overlay">
+          <p>HTML, CSS, JAVASCRIPT.</p>
+          <div class="button-container">
+              <a href="https://junzel15.github.io/EF-Tech-Cellphones/" class="button">Live Link</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="project">
+        <img src="images/project4-image.JPG" alt="Project Image">
+        <div class="overlay">
+          <p>HTML, CSS, JAVASCRIPT, REACT JS.</p>
+          <div class="button-container">
+              <a href="https://el-flo-computer-and-enterprises.onrender.com" class="button">Live Link</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="project">
+      <img src="images/project5-image.JPG" alt="Project Image">
+      <div class="overlay">
+        <p>HTML, CSS, JAVASCRIPT, REACT JS.</p>
+        <div class="button-container">
+            <a href="https://ef-clothing.onrender.com" class="button">Live Link</a>
+          </div>
+      </div>
+  </div>
+
+  <div class="project">
+      <img src="images/project6-image.JPG" alt="Project Image">
+      <div class="overlay">
+        <p>HTML, CSS, JAVASCRIPT, REACT JS, FAKE STORE API.</p>
+        <div class="button-container">
+            <a href="https://f-e-store.onrender.com" class="button">Live Link</a>
+          </div>
+      </div>
+  </div>
+
+  
+  </section>
+
+  <header id="contact" class="head-contact"><b><i class='bx bxs-contact'></i>Contact Me</b></header>
+  <section id="contact" class="contact-section">
+    <div class="contact-info">
+        <i class='bx bx-envelope'></i> Email: bogsangitelvis@gmail.com<br>
+        <i class='bx bx-map'></i> Address: Dao, Pagadian City, Philippines.<br>
+        <i class='bx bx-phone'></i> Phone: 09555261873
+    </div>
+    <form class="contact-form">
+      <input type="text" name="name" id="name" placeholder="Your Name" required>
+      <input type="email" name="email" id="email" placeholder="Your Email" required>
+      <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+      <button type="button" onclick="sendEmail()"><i class='bx bx-send'></i> Send Message</button>
+    </form>
+    <div id="response-message"></div> 
+</section>
+<footer>
+  <div class="footer-social">
+      <a href="https://www.facebook.com/elvis.bogsangit.3/"><i class='bx bxl-facebook'></i></a>
+      <a href="https://twitter.com/ElvisJr92378"><i class='bx bxl-twitter'></i></a>
+      <a href="https://www.linkedin.com/in/elvis-bogsangit-jr-8473352b3/"><i class='bx bxl-linkedin'></i></a>
+  </div>
+  <div class="footer-bottom">
+      <p>ELVIS WEBSITE PROJECT PORTFOLIO</p>
+  </div>
+</footer>
+
+
+ <script src="main.js"></script>
   </body>
 </html>
